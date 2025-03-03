@@ -4,51 +4,47 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="bootstrap.min.css">
+		<link rel="stylesheet" href="index.css"
 		<title>Dine In or Out</title>
-		<style type="text/css">
-			#decision-chat-log {
-				font-size: 18px;
-				color: darkgrey;
-			}
-			.website-hero {
-				padding: 20px;
-			}
-			.website-title {
-				font-size: 50px;
-				text-align: center;
-			}
-			.website-subtitle {
-				text-align: center;
-			}
-			.applet-card {
-				margin: 60px;
-			}
-		</style>
 	</head>
 	<body>
+		<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+			<div class="container-fluid">
+				<div class="">
+					<a class="navbar-brand" href="/">Dine In or Out<br></a>
+					<p class="website-subtitle">An APAILLM Applet, built on APAILLM 20.jO</p>
+				</div>
+				<span class="navbar-text">
+					<a href="https://mastodon.social/@nsmug">Follow on Mastodon</a>
+				</span>
+			</div>
+		</nav>
 		<div class="container">
-			<div class="row">
+			<div class="row hide">
 				<div class="col website-hero">
 					<h1 class="website-title">Dine In or Out</h1>
-					<p class="website-subtitle">An APAILLM Applet, built on APAILLM 20.jO!</p>
+					<p class="website-subtitle"></p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col applet-card">
-					<div class="card text-center">
+					<div class="card">
 						<div class="card-header">
-							<b>APAILLM 20.jO</b> Decision Making Applet
+							Decision Making Applet
 						</div>
 						<div class="card-body">
-							<h2 id="decision-chat-log"></h2>
-							<h2 id="decision-status"></h2>
-							<br>
-							<br>
-							<button class="btn btn-primary" onclick="decideAgain()">Decide For Me</button>
-							<br>
-							<br>
-							<input class="" type="checkbox" role="switch" id="advanced-ai-source" value="false">
-							<label for="advanced-ai-source">Use latest <b><i>APAILLM 31.q</i></b> Model</label>
+							<div class="chat-body">
+								<p class="chat-log human-chat-log">Human: Should I eat in or out?</p>
+								<p class="chat-log llm-chat-log" id="llm-chat-log"></p>
+								<p class="chat-log llm-chat-action" id="llm-chat-action"></p>
+							</div>
+							<div class="chat-actions">
+								<button class="btn btn-primary" onclick="decideAgain()">Decide For Me</button>
+								<br>
+								<br>
+								<input class="" type="checkbox" role="switch" id="advanced-ai-source" value="false">
+								<label for="advanced-ai-source">Use latest <b><i>APAILLM 31.q</i></b> Model</label>
+							</div>
 						</div>
 						<div class="card-footer text-end">
 							<b>Using APAILLM 20.jO model</b>
@@ -60,7 +56,7 @@
 			<div class="row">
 				<div class="col">
 					<h3>FAQs</h3>
-					<p><b>What is this Dine In or Out?</b><br>An AI applet leveraging the latest in Large Language Models to help you answer the hardest question...should you dine in or out tonight?</p>
+					<p><b>What is Dine In or Out?</b><br>An AI applet leveraging the latest in Large Language Models to help you answer the hardest question...should you dine in or out tonight?</p>
 					<p><b>How does this site work?</b><br>Dine In or Out leverages the latest in Advanced Proprietary Artificial Intelligence Large Language Models <i><b>(APAILLMs)</b></i> trained to make the most important decisions in life. On average, every decision request requires 1.21 Gigawatts of fossil fuel power.</p>
 					<p><b>What technology powers this site?</b><br>While much of our technology is proprietary, and patent pending, we use the latest following items: Hypertext Markup Language, Cascading Style Sheets, and Dynamic Type-safe JavaScript.</p>
 					<p><b>How can I financially support this amazing AI innovation?</b><br>We are currently looking for Round 1 Funding starting at a 1.65 Million Dollars. If you would rather support our dedicated and hard working team with Bitcoin or other Crypto currency, please reach out directly to crypto@dineinorout.com.</p>
@@ -73,7 +69,17 @@
 			</div>
 		</div>
 	</body>
-	<footer>
+	<footer class="main-footer">
 		<script type="text/javascript" src="index.js"></script>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<p class="footer-title">Dine In or Out</p>
+				</div>
+				<div class="col text-end">
+					<a href="https://mastodon.social/@nsmug">Follow on Mastodon</a>
+				</div>
+			</div>
+		</div>
 	</footer>
 </html>

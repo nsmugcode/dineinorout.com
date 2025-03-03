@@ -1,0 +1,57 @@
+.hide {
+	display: none;
+}
+#decision-chat-log {
+	color: darkgrey;
+}
+.website-hero {
+	padding: 20px;
+}
+.website-title {
+	font-size: 50px;
+	text-align: left;
+}
+.website-subtitle {
+	font-size: 15px;
+	text-align: right;
+	color: darkgrey;
+	margin-bottom: 0px;
+}
+.applet-card {
+	margin: 30px;
+}
+.navbar-text a {
+	text-decoration: none;
+}
+.navbar-text a:hover {
+	text-decoration: underline;
+	color: darkgrey;
+}
+.chat-body {
+	margin-bottom: 50px;
+}
+.chat-actions {
+
+}
+.chat-log {
+	font-size: 20px;
+	margin-bottom: 0px;
+}
+.human-chat-log {
+	color: darkgrey;
+}
+.llm-chat-log {
+	color: black;
+}
+.llm-chat-action {
+	color: black;
+}
+/* Footer */
+.main-footer {
+	border-top: 1px solid lightgray;
+	min-height: 100px;
+	padding: 20px;
+}
+.footer-title {
+	font-size: 20px;
+}
